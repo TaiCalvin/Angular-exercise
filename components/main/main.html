@@ -1,0 +1,13 @@
+<!-- <div>
+    <input type="text" placeholder="enter name" ng-model="$ctrl.me.name">
+    <p>{{$ctrl.me}}</p>
+    <button ng-click="$ctrl.changeName('Cary')">Submit</button>
+</div> -->
+
+<div>
+    <h1 ng-repeat="fam in $ctrl.familyMembers">{{fam.name}} is my {{fam.relation}} and they are {{fam.age}} years old </h1>
+    <input type="text" placeholder="enter name of family memeber" ng-model="$ctrl.familyMembers.name">
+    <!-- <input type="text" placeholder="enter relation of family memeber" ng-model="newRelation">
+    <input type="text" placeholder="enter age of family memeber" ng-model="newAge"> -->
+    <button ng-click="$ctrl.changeName()">Submit</button>
+</div>

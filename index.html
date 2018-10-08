@@ -7,13 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Name:<input placeholder="Whats your name?" type="text" ng-model="nameValue" /></h1>
-    <h1>Year:<input placeholder="What year were is it?" type="text" ng-model="ageValue" /></h1>
-    <h1>Age:<input placeholder="How old are you?" type="text" ng-model="oldValue" /></h1>
-    <h6>Are you over the age of 21?</h6><input type="checkbox" ng-model="choice"/>
-    <h1 ng-if="choice"> {{nameValue | uppercase}} was born in {{ageValue-oldValue}}! They are currently over the age of 21.</h1>
-
+    <main></main>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
     <script src="index.js"></script>
+    <script src="components/main/main.js"></script>
+    <script src="components/main/main-controller.js"></script>
 </body>
 </html>
